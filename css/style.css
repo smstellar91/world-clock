@@ -1,64 +1,99 @@
-body{
-    background-color: plum;
-    font-family: 'Courier New', Courier, monospace;
+/* Retro-Pinkified Version */
+
+body {
+    background-color: lightpink;
+    color: #ff66cc;
+    font-family: 'Share Tech Mono', monospace;
+    text-shadow: 0 0 6px #ff66cc;
+    animation: flicker 0.12s infinite alternate;
 }
-h1{
+
+h1 {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size:36px ;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 36px;
+    text-shadow: 0 0 4px #ff66cc;
 }
-h2{
+
+h2 {
     margin: 0 0 10px;
     font-size: 28px;
+    text-shadow: 0 0 4px #ff66cc;
 }
-select{
+
+select {
     display: block;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     font-size: 18px;
+    background-color:lightpink;
+    color: #ff66cc;
+    border: 2px solid #ff66cc;
+    box-shadow: 0 0 5px #ff66cc;
+    font-family: 'Share Tech Mono', monospace;
 }
 
-
-.container{
+.container {
     max-width: 600px;
     background: white;
     padding: 60px;
-    margin:60px auto;
-    box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+    margin: 60px auto;
+    box-shadow: 0 0 10px #ff66cc;
     border-radius: 10px;
-}
-.city{
-    display: flex;
-    margin: 20px 0;
-  justify-content: space-between;
-  padding: 30px 0;
-  border-bottom: 1px dashed rgba(0,0,0,0.3);
+    border: 2px solid #ff66cc;
 }
 
-.city:last-child{
+.city {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px dashed #ff66cc;
+}
+
+.city:last-child {
     border-bottom: none;
 }
 
-
-
-.date{
-    opacity: 0.5;
+.date {
+    opacity: 0.7;
+    font-family: 'Share Tech Mono', monospace;
 }
 
-.time{
+.time {
     font-size: 35px;
     font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
 }
-.time small{
+
+.time small {
     font-size: 24px;
     vertical-align: middle;
-   
 }
 
-
-footer{
+footer {
     text-align: center;
-    font-size:18px ;
-    color: rgba(0,0,0,0.6);
+    font-size: 18px;
+    color: #ff66cc;
+    opacity: 0.8;
+    text-shadow: 0 0 3px #ff66cc;
 }
+
+/* CRT Scanline Effect */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        rgba(255, 102, 204, 0.05) 0px,
+        transparent 2px,
+        rgba(255, 102, 204, 0.05) 4px
+    );
+    pointer-events: none;
+}
+
+
