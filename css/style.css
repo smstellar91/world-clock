@@ -65,7 +65,21 @@ select {
     vertical-align: middle;
     color: #ff66b3; 
 }
+.home-button {
+    display: block;
+    background-color: #ff66b3; 
+    color: white;              
+    font-size: 15px;           
+    padding: 10px 20px;       
+    border: none;              
+    border-radius: 5px;       
+    cursor: pointer;          
+    transition: background-color 0.3s;
+}
 
+.home-button:hover {
+    background-color: #d7008f; 
+}
 .hidden {
     display: none;
 }
