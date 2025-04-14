@@ -1,3 +1,5 @@
+
+
 function updateTime() {
 
     let londonElement = document.querySelector("#london");
@@ -48,8 +50,15 @@ function updateTime() {
             <div class="time"> ${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></div>
         </div>
         `;
+
+        let button = document.querySelector("#refresh");
+        button.classList.remove("hidden");
+        button.addEventListener("click", function() {
+            location.reload();
+        });
     }
-    
+    document.querySelector("#refresh").classList.add("hidden");
+
     updateTime();
     setInterval(updateTime, 1000);
     

@@ -66,12 +66,17 @@ select {
     color: #ff66b3; 
 }
 
+.hidden {
+    display: none;
+}
+
+
 footer {
     text-align: center;
     font-size: 18px;
     color: #d7008f; 
+    
 }
-
 
 body::after {
     content: "";
